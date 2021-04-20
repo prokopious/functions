@@ -17,7 +17,7 @@ const Checkout = () => {
       method: "POST",
       body: JSON.stringify(lineItems),
     })
-      .then(async response => {
+      .then(async (response) => {
         const { id } = await response.json()
         localStorage.setItem("cart", "{}")
         const stripe = await stripePromise
@@ -27,7 +27,7 @@ const Checkout = () => {
         // using `error.message`.
         alert(error.message)
       })
-      .catch(err => alert(err.message))
+      .catch((err) => alert(err.message))
   }
 
   return <button onClick={onClick}>Checkout for ${total / 100}</button>
