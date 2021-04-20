@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `campy trails`,
-    description: `Stripe storefront starter for Gatsby`,
+    title: `Squirrel Gorge`,
+    description: `Stripe-powered squirrel shop`,
     author: `Brock McElroy <brxck.dev>`,
   },
   plugins: [
