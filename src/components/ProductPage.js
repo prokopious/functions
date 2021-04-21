@@ -14,13 +14,15 @@ const ProductPage = ({ productId }) => {
   const prices = [...product.prices].sort(
     (a, b) => a.unit_amount - b.unit_amount
   )
+  let pricez;
+  console.log(prices)
   const [activePrice, setActivePrice] = useState(prices[0])
   const [imageIndex, setImageIndex] = useState(0)
 
   const images = [...product?.localFiles]
   const activeImage = images[imageIndex].childImageSharp.gatsbyImageData
 
-  const onPriceChange = e => {
+  const onPriceChange = (e) => {
     setActivePrice(prices[e.target.value])
   }
 
@@ -57,7 +59,7 @@ const ProductPage = ({ productId }) => {
           <label>
             Item Style
             <select name="price" id="price" onChange={onPriceChange}>
-              {product.prices.map((price, i) => {
+              {prices.map((price, i) => {
                 return (
                   <option value={i} key={price.id}>
                     {price.nickname} &ndash; ${price.unit_amount / 100}
@@ -78,6 +80,7 @@ const ProductPage = ({ productId }) => {
           {available(activePrice.id) ? "Add To Cart" : "Sold Out"}
         </button>
       </div>
+
     </div>
   )
 }

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=Limelight&display=swap');
+
 :root {
-  --hiq-color-primary: hsl(226, 82%, 58%);
+  --hiq-color-primary: hsl(0, 0%, 36%);
+  font-family: 'IM Fell Double Pica', serif;
 }

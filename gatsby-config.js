@@ -15,6 +15,16 @@ module.exports = {
     },
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `limelight`,
+          `source sans pro\:300,400,400i,700` 
+        ],
+        display: 'swap'
+      }
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -23,7 +33,7 @@ module.exports = {
         short_name: `campy trails`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#ffffff`,
+        theme_color: `red`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
