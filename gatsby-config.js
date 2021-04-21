@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Squirrel Gorge`,
+    title: `Squirreltown`,
     description: `Stripe-powered squirrel shop`,
     author: `Brock McElroy <brxck.dev>`,
   },
